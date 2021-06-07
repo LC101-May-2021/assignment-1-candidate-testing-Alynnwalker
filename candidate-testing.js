@@ -24,7 +24,7 @@ console.clear ()
 function askQuestion() {
 for (let i = 0 ; i <questions.length ; i++){
 candidateAnswer = input.question(questions[i]);
-candidateAnswer = candidateAnswer.toLowerCase()
+//candidateAnswer = candidateAnswer.toLowerCase()
 
 candidateAnswers.push (candidateAnswer);
 console.log (); 
@@ -35,9 +35,15 @@ console.log ();
 let minimumScore = 80
 function gradeQuiz(candidateAnswers) {
   let points = 0
+  candidateAnswer = candidateAnswer.toLowerCase()
 for (let i = 0 ; i <questions.length ; i++){
-  if (candidateAnswers[i] == correctAnswers[i]){
+  //candidateAnswer = candidateAnswer.toLowerCase()
+  //if (candidateAnswers.toLowerCase[i] == correctAnswers[i]){
+  if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()){
+ // if (candidateAnswer[i] == correctAnswers[i]){
      points = points+1;
+}else {
+  points = points
 }
 
 console.log (questions[i])
