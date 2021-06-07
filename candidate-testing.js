@@ -17,7 +17,7 @@ let candidateAnswers =[];
 ///----------------------------------------------------------------------
   // TODO 1.1b: Ask for candidate's name //
 function askForName() {
-candidateName = input.question ( "Candidate (user) enter name: ");
+candidateName = input.question ( "Candidate (user) enter name:");
 console.clear ()
 }
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
