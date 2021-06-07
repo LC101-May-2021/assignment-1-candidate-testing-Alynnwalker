@@ -34,10 +34,10 @@ console.log ();
 // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 let minimumScore = 80
 function gradeQuiz(candidateAnswers) {
-  let pointsEarned = 0
+  let points = 0
 for (let i = 0 ; i <questions.length ; i++){
   if (candidateAnswers[i] == correctAnswers[i]){
-     pointsEarned = pointsEarned+1;
+     points = points+1;
 }
 
 console.log (questions[i])
@@ -46,7 +46,7 @@ console.log (questions[i])
     Correct Answer:  ${ correctAnswers[i]}
     `);
 }
-  let grade = ((pointsEarned / questions.length)*100);
+  let grade = ((points / questions.length)*100);
 let result = ("Pending");
 
 if ( grade >= minimumScore){
@@ -54,7 +54,7 @@ if ( grade >= minimumScore){
 } else {
   result =("FAILED");
 }
-console.log (`>>>> Overall Grade: ${grade}% (${pointsEarned} of ${questions.length} correct) <<<<`);
+console.log (`>>>> Overall Grade: ${grade}% (${points} of ${questions.length} correct) <<<<`);
 console.log (`>>>> Status ${result} <<<<`);
   return grade;
 }
